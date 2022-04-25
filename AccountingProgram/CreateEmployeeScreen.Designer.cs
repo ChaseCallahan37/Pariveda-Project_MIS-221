@@ -32,6 +32,10 @@
             this.labelPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.creationPanel = new System.Windows.Forms.Panel();
+            this.yearsServiceTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.hourlyRadio = new System.Windows.Forms.RadioButton();
+            this.salaryRadio = new System.Windows.Forms.RadioButton();
             this.cancelButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.deptComboBox = new System.Windows.Forms.ComboBox();
@@ -41,11 +45,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.salaryRadio = new System.Windows.Forms.RadioButton();
-            this.hourlyRadio = new System.Windows.Forms.RadioButton();
             this.clearButton = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.yearsServiceTextBox = new System.Windows.Forms.TextBox();
             this.mainPanel.SuspendLayout();
             this.labelPanel.SuspendLayout();
             this.creationPanel.SuspendLayout();
@@ -56,7 +56,7 @@
             this.mainPanel.Controls.Add(this.labelPanel);
             this.mainPanel.Controls.Add(this.creationPanel);
             this.mainPanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.mainPanel.Location = new System.Drawing.Point(959, 141);
+            this.mainPanel.Location = new System.Drawing.Point(945, 44);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(441, 636);
             this.mainPanel.TabIndex = 7;
@@ -71,12 +71,17 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(62, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "User Creation";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // creationPanel
             // 
@@ -97,6 +102,47 @@
             this.creationPanel.Name = "creationPanel";
             this.creationPanel.Size = new System.Drawing.Size(366, 408);
             this.creationPanel.TabIndex = 0;
+            // 
+            // yearsServiceTextBox
+            // 
+            this.yearsServiceTextBox.Location = new System.Drawing.Point(127, 78);
+            this.yearsServiceTextBox.Name = "yearsServiceTextBox";
+            this.yearsServiceTextBox.Size = new System.Drawing.Size(239, 26);
+            this.yearsServiceTextBox.TabIndex = 22;
+            this.yearsServiceTextBox.TextChanged += new System.EventHandler(this.yearsServiceTextBox_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 20);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Years of Servic";
+            // 
+            // hourlyRadio
+            // 
+            this.hourlyRadio.AutoSize = true;
+            this.hourlyRadio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hourlyRadio.Location = new System.Drawing.Point(141, 260);
+            this.hourlyRadio.Name = "hourlyRadio";
+            this.hourlyRadio.Size = new System.Drawing.Size(79, 24);
+            this.hourlyRadio.TabIndex = 20;
+            this.hourlyRadio.TabStop = true;
+            this.hourlyRadio.Text = "Hourly";
+            this.hourlyRadio.UseVisualStyleBackColor = true;
+            // 
+            // salaryRadio
+            // 
+            this.salaryRadio.AutoSize = true;
+            this.salaryRadio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.salaryRadio.Location = new System.Drawing.Point(141, 216);
+            this.salaryRadio.Name = "salaryRadio";
+            this.salaryRadio.Size = new System.Drawing.Size(78, 24);
+            this.salaryRadio.TabIndex = 19;
+            this.salaryRadio.TabStop = true;
+            this.salaryRadio.Text = "Salary";
+            this.salaryRadio.UseVisualStyleBackColor = true;
             // 
             // cancelButton
             // 
@@ -188,36 +234,12 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Name";
             // 
-            // salaryRadio
-            // 
-            this.salaryRadio.AutoSize = true;
-            this.salaryRadio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.salaryRadio.Location = new System.Drawing.Point(141, 216);
-            this.salaryRadio.Name = "salaryRadio";
-            this.salaryRadio.Size = new System.Drawing.Size(78, 24);
-            this.salaryRadio.TabIndex = 19;
-            this.salaryRadio.TabStop = true;
-            this.salaryRadio.Text = "Salary";
-            this.salaryRadio.UseVisualStyleBackColor = true;
-            // 
-            // hourlyRadio
-            // 
-            this.hourlyRadio.AutoSize = true;
-            this.hourlyRadio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hourlyRadio.Location = new System.Drawing.Point(141, 260);
-            this.hourlyRadio.Name = "hourlyRadio";
-            this.hourlyRadio.Size = new System.Drawing.Size(79, 24);
-            this.hourlyRadio.TabIndex = 20;
-            this.hourlyRadio.TabStop = true;
-            this.hourlyRadio.Text = "Hourly";
-            this.hourlyRadio.UseVisualStyleBackColor = true;
-            // 
             // clearButton
             // 
             this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.clearButton.Location = new System.Drawing.Point(1837, 109);
+            this.clearButton.Location = new System.Drawing.Point(1837, 83);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 49);
             this.clearButton.TabIndex = 8;
@@ -225,28 +247,11 @@
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 20);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Years of Servic";
-            // 
-            // yearsServiceTextBox
-            // 
-            this.yearsServiceTextBox.Location = new System.Drawing.Point(127, 78);
-            this.yearsServiceTextBox.Name = "yearsServiceTextBox";
-            this.yearsServiceTextBox.Size = new System.Drawing.Size(239, 26);
-            this.yearsServiceTextBox.TabIndex = 22;
-            this.yearsServiceTextBox.TextChanged += new System.EventHandler(this.yearsServiceTextBox_TextChanged);
-            // 
             // yearsOfServiceTextBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Olive;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.mainPanel);
