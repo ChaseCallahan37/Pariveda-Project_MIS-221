@@ -1,0 +1,3 @@
+﻿luxury bag#insert description later#40.00
+standard bag#insert description later#20.00
+deluxe bag#insert description later#30.00

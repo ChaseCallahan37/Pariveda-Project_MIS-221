@@ -1,0 +1,8 @@
+test#t#t#admin
+chase callahan#chase.callahan#password#admin
+jeff lucas#jeff.lucas#password#admin
+wagner osborne#wagner.osborne#password#admin
+wagner osborne#wagner.osborne#password#admin
+john doe#john.doe#pass#admin
+test#test#test#human resource
+ben reeves#ben.reeves#demomaster#admin
