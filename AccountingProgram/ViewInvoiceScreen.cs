@@ -190,7 +190,7 @@ namespace AccountingProgram
 
         private void editEmployeeTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void topPanel_Paint(object sender, PaintEventArgs e)

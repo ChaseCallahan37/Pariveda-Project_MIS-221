@@ -109,13 +109,17 @@ namespace AccountingProgram
             delUser.SetUsername(usernameTextBox.Text);
             if(UserDatabase.FindUsername(delUser) == true)
             {
-                if(UserDatabase.DeleteUser(delUser))
+                DialogResult dialogResult = MessageBox.Show("Would you like to delete this User?", "Delete User", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
                 {
-                    MessageBox.Show("User was deleted");
-                }
-                else
-                {
-                    MessageBox.Show("User was not deleted");
+                    if (UserDatabase.DeleteUser(delUser))
+                    {
+                        MessageBox.Show("User was deleted");
+                    }
+                    else
+                    {
+                        MessageBox.Show("User was not deleted");
+                    }
                 }
             }
             else

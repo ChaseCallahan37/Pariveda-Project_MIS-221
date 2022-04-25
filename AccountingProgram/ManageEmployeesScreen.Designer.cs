@@ -32,6 +32,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.viewEmployeeSearchTextBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.editEmployeePanel = new System.Windows.Forms.Panel();
@@ -63,9 +65,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.closeAllWindows = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.searchPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.editEmployeePanel.SuspendLayout();
@@ -74,7 +75,6 @@
             this.employeeChoicePanel.SuspendLayout();
             this.companySearchPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -86,10 +86,11 @@
             // 
             this.viewEmployeeSearchTextBox.Enabled = false;
             this.viewEmployeeSearchTextBox.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewEmployeeSearchTextBox.Location = new System.Drawing.Point(12, 106);
+            this.viewEmployeeSearchTextBox.Location = new System.Drawing.Point(35, 159);
             this.viewEmployeeSearchTextBox.Multiline = true;
             this.viewEmployeeSearchTextBox.Name = "viewEmployeeSearchTextBox";
-            this.viewEmployeeSearchTextBox.Size = new System.Drawing.Size(1624, 988);
+            this.viewEmployeeSearchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.viewEmployeeSearchTextBox.Size = new System.Drawing.Size(1601, 835);
             this.viewEmployeeSearchTextBox.TabIndex = 8;
             this.viewEmployeeSearchTextBox.TextChanged += new System.EventHandler(this.viewEmployeeSearchTextBox_TextChanged);
             // 
@@ -102,6 +103,29 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1946, 1106);
             this.panel3.TabIndex = 10;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1946, 100);
+            this.panel4.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(866, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(173, 37);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Employees";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // searchPanel
             // 
@@ -117,6 +141,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.deleteEmployeePanel);
             this.panel2.Controls.Add(this.editEmployeePanel);
             this.panel2.Controls.Add(this.createEmployeePanel);
             this.panel2.Location = new System.Drawing.Point(18, 469);
@@ -126,7 +151,6 @@
             // 
             // editEmployeePanel
             // 
-            this.editEmployeePanel.Controls.Add(this.deleteEmployeePanel);
             this.editEmployeePanel.Controls.Add(this.editEmployee);
             this.editEmployeePanel.Controls.Add(this.editEmployeeTextBox);
             this.editEmployeePanel.Controls.Add(this.label7);
@@ -143,7 +167,7 @@
             this.deleteEmployeePanel.Controls.Add(this.employeeDeleteIdTextBox);
             this.deleteEmployeePanel.Controls.Add(this.label5);
             this.deleteEmployeePanel.Controls.Add(this.label6);
-            this.deleteEmployeePanel.Location = new System.Drawing.Point(0, 0);
+            this.deleteEmployeePanel.Location = new System.Drawing.Point(7, 12);
             this.deleteEmployeePanel.Name = "deleteEmployeePanel";
             this.deleteEmployeePanel.Size = new System.Drawing.Size(242, 252);
             this.deleteEmployeePanel.TabIndex = 7;
@@ -424,29 +448,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1946, 100);
-            this.panel4.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(866, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(173, 37);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Employees";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // ManageEmployeesScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -462,6 +463,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.searchPanel.ResumeLayout(false);
             this.searchPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -476,8 +479,6 @@
             this.companySearchPanel.ResumeLayout(false);
             this.companySearchPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }

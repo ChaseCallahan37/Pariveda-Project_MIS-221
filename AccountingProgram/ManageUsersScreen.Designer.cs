@@ -32,10 +32,12 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.viewUsersTextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.returnButton = new System.Windows.Forms.Button();
             this.goBack = new System.Windows.Forms.Button();
             this.createUserButton = new System.Windows.Forms.Button();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.deleteUserButton = new System.Windows.Forms.Button();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.topPanel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.returnButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.searchPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,11 +74,12 @@
             this.viewUsersTextBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.viewUsersTextBox.Enabled = false;
             this.viewUsersTextBox.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewUsersTextBox.Location = new System.Drawing.Point(12, 115);
+            this.viewUsersTextBox.Location = new System.Drawing.Point(86, 122);
             this.viewUsersTextBox.Multiline = true;
             this.viewUsersTextBox.Name = "viewUsersTextBox";
             this.viewUsersTextBox.ReadOnly = true;
-            this.viewUsersTextBox.Size = new System.Drawing.Size(1575, 772);
+            this.viewUsersTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.viewUsersTextBox.Size = new System.Drawing.Size(1501, 704);
             this.viewUsersTextBox.TabIndex = 5;
             this.viewUsersTextBox.WordWrap = false;
             this.viewUsersTextBox.TextChanged += new System.EventHandler(this.viewUsersTextBox_TextChanged);
@@ -95,6 +96,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 899);
             this.panel1.TabIndex = 6;
+            // 
+            // returnButton
+            // 
+            this.returnButton.BackColor = System.Drawing.Color.DimGray;
+            this.returnButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.returnButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.returnButton.ForeColor = System.Drawing.Color.White;
+            this.returnButton.Location = new System.Drawing.Point(154, 81);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(101, 49);
+            this.returnButton.TabIndex = 6;
+            this.returnButton.Text = "Return";
+            this.returnButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.returnButton.UseVisualStyleBackColor = false;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // goBack
             // 
@@ -143,6 +159,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(209, 284);
             this.panel2.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(209, 40);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Enter Username to\r\nedit or delete\r\n";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // deleteUserButton
             // 
@@ -269,33 +297,6 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1619, 100);
             this.topPanel.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Location = new System.Drawing.Point(25, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 40);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Enter Username to\r\nedit or delete\r\n";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // returnButton
-            // 
-            this.returnButton.BackColor = System.Drawing.Color.DimGray;
-            this.returnButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.returnButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.returnButton.ForeColor = System.Drawing.Color.White;
-            this.returnButton.Location = new System.Drawing.Point(154, 81);
-            this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(101, 49);
-            this.returnButton.TabIndex = 6;
-            this.returnButton.Text = "Return";
-            this.returnButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.returnButton.UseVisualStyleBackColor = false;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // ManageUsersScreen
             // 

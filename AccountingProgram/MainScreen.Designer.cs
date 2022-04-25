@@ -119,7 +119,7 @@
             // logoutButton
             // 
             this.logoutButton.BackColor = System.Drawing.Color.Silver;
-            this.logoutButton.Location = new System.Drawing.Point(4, 143);
+            this.logoutButton.Location = new System.Drawing.Point(0, 143);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(193, 68);
@@ -179,8 +179,9 @@
             // 
             // displayUserLabel
             // 
+            this.displayUserLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.displayUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayUserLabel.Location = new System.Drawing.Point(3, 78);
+            this.displayUserLabel.Location = new System.Drawing.Point(4, 78);
             this.displayUserLabel.Name = "displayUserLabel";
             this.displayUserLabel.Size = new System.Drawing.Size(157, 60);
             this.displayUserLabel.TabIndex = 3;
