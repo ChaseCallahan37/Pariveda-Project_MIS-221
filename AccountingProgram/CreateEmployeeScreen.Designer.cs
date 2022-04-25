@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.labelPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.creationPanel = new System.Windows.Forms.Panel();
             this.yearsServiceTextBox = new System.Windows.Forms.TextBox();
@@ -45,9 +44,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.clearButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
-            this.labelPanel.SuspendLayout();
             this.creationPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,31 +54,21 @@
             this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainPanel.Controls.Add(this.labelPanel);
+            this.mainPanel.Controls.Add(this.label2);
             this.mainPanel.Controls.Add(this.creationPanel);
             this.mainPanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.mainPanel.Location = new System.Drawing.Point(945, 44);
+            this.mainPanel.Location = new System.Drawing.Point(824, 12);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(441, 636);
+            this.mainPanel.Size = new System.Drawing.Size(463, 692);
             this.mainPanel.TabIndex = 7;
-            // 
-            // labelPanel
-            // 
-            this.labelPanel.Controls.Add(this.label2);
-            this.labelPanel.Location = new System.Drawing.Point(112, 4);
-            this.labelPanel.Name = "labelPanel";
-            this.labelPanel.Size = new System.Drawing.Size(200, 100);
-            this.labelPanel.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 35);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(463, 57);
             this.label2.TabIndex = 0;
             this.label2.Text = "User Creation";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,12 +91,12 @@
             this.creationPanel.Controls.Add(this.label1);
             this.creationPanel.Location = new System.Drawing.Point(37, 151);
             this.creationPanel.Name = "creationPanel";
-            this.creationPanel.Size = new System.Drawing.Size(366, 408);
+            this.creationPanel.Size = new System.Drawing.Size(423, 408);
             this.creationPanel.TabIndex = 0;
             // 
             // yearsServiceTextBox
             // 
-            this.yearsServiceTextBox.Location = new System.Drawing.Point(127, 78);
+            this.yearsServiceTextBox.Location = new System.Drawing.Point(134, 78);
             this.yearsServiceTextBox.Name = "yearsServiceTextBox";
             this.yearsServiceTextBox.Size = new System.Drawing.Size(239, 26);
             this.yearsServiceTextBox.TabIndex = 22;
@@ -117,11 +105,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 78);
+            this.label6.Location = new System.Drawing.Point(3, 78);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 20);
+            this.label6.Size = new System.Drawing.Size(125, 20);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Years of Servic";
+            this.label6.Text = "Years of Service";
             // 
             // hourlyRadio
             // 
@@ -150,7 +138,7 @@
             // cancelButton
             // 
             this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelButton.Location = new System.Drawing.Point(109, 336);
+            this.cancelButton.Location = new System.Drawing.Point(80, 336);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 34);
             this.cancelButton.TabIndex = 18;
@@ -161,7 +149,7 @@
             // saveButton
             // 
             this.saveButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveButton.Location = new System.Drawing.Point(248, 336);
+            this.saveButton.Location = new System.Drawing.Point(238, 336);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(76, 34);
             this.saveButton.TabIndex = 17;
@@ -179,7 +167,7 @@
             "human resource",
             "management",
             "manufactoring"});
-            this.deptComboBox.Location = new System.Drawing.Point(124, 118);
+            this.deptComboBox.Location = new System.Drawing.Point(134, 126);
             this.deptComboBox.Name = "deptComboBox";
             this.deptComboBox.Size = new System.Drawing.Size(239, 28);
             this.deptComboBox.TabIndex = 8;
@@ -187,7 +175,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 218);
+            this.label4.Location = new System.Drawing.Point(3, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 40);
             this.label4.TabIndex = 16;
@@ -195,7 +183,7 @@
             // 
             // payRateTextBox
             // 
-            this.payRateTextBox.Location = new System.Drawing.Point(109, 175);
+            this.payRateTextBox.Location = new System.Drawing.Point(134, 175);
             this.payRateTextBox.Name = "payRateTextBox";
             this.payRateTextBox.Size = new System.Drawing.Size(239, 26);
             this.payRateTextBox.TabIndex = 15;
@@ -204,7 +192,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 175);
+            this.label3.Location = new System.Drawing.Point(3, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 14;
@@ -214,7 +202,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 126);
+            this.label5.Location = new System.Drawing.Point(3, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 20);
             this.label5.TabIndex = 12;
@@ -222,7 +210,7 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(109, 26);
+            this.nameTextBox.Location = new System.Drawing.Point(134, 26);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(239, 26);
             this.nameTextBox.TabIndex = 7;
@@ -231,32 +219,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 26);
+            this.label1.Location = new System.Drawing.Point(3, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Name";
             // 
-            // clearButton
+            // button1
             // 
-            this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.clearButton.Location = new System.Drawing.Point(1837, 83);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 49);
-            this.clearButton.TabIndex = 8;
-            this.clearButton.Text = "Back";
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1811, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 49);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Return";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // yearsOfServiceTextBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
-            this.Controls.Add(this.clearButton);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "yearsOfServiceTextBox";
@@ -265,8 +255,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CreateEmployeeScreen_Load);
             this.mainPanel.ResumeLayout(false);
-            this.labelPanel.ResumeLayout(false);
-            this.labelPanel.PerformLayout();
             this.creationPanel.ResumeLayout(false);
             this.creationPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -276,7 +264,6 @@
         #endregion
 
         private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.Panel labelPanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel creationPanel;
         private System.Windows.Forms.Button cancelButton;
@@ -290,8 +277,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton hourlyRadio;
         private System.Windows.Forms.RadioButton salaryRadio;
-        private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox yearsServiceTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }

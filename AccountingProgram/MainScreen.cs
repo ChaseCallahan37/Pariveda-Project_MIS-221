@@ -20,7 +20,6 @@ namespace AccountingProgram
 
         private static ManageEmployeesScreen manageEmployeesScreen = new ManageEmployeesScreen();
 
-        private static PayrollScreen payrollScreen = new PayrollScreen();
 
         
         public MainScreen(Users user)
@@ -115,8 +114,7 @@ namespace AccountingProgram
 
         private void payrollButton_Click(object sender, EventArgs e)
         {
-            payrollScreen = new PayrollScreen();
-            payrollScreen.Show();
+
         }
     }
 }

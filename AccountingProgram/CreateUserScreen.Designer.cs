@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.centerPanel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.creationPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.centerPanel.SuspendLayout();
@@ -217,14 +218,16 @@
             // 
             // centerPanel
             // 
+            this.centerPanel.Controls.Add(this.button1);
             this.centerPanel.Controls.Add(this.label6);
             this.centerPanel.Controls.Add(this.mainPanel);
-            this.centerPanel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.centerPanel.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerPanel.Location = new System.Drawing.Point(0, 0);
             this.centerPanel.Name = "centerPanel";
             this.centerPanel.Size = new System.Drawing.Size(1946, 1106);
             this.centerPanel.TabIndex = 7;
+            this.centerPanel.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -236,6 +239,22 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "User Creation Form";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1833, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 49);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Return";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CreateUserScreen
             // 
@@ -278,5 +297,6 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Panel centerPanel;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

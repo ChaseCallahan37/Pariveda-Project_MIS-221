@@ -82,7 +82,7 @@
             this.overallPanel.Controls.Add(this.itemsPurchasedLabel);
             this.overallPanel.Controls.Add(this.createInvoiceSubHeader);
             this.overallPanel.Controls.Add(this.createInvoiceHeaderLabel);
-            this.overallPanel.Location = new System.Drawing.Point(342, 17);
+            this.overallPanel.Location = new System.Drawing.Point(724, 11);
             this.overallPanel.Name = "overallPanel";
             this.overallPanel.Size = new System.Drawing.Size(484, 627);
             this.overallPanel.TabIndex = 0;
@@ -393,22 +393,24 @@
             // 
             // clearButton
             // 
-            this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.clearButton.BackColor = System.Drawing.Color.DimGray;
             this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.clearButton.Location = new System.Drawing.Point(940, 23);
+            this.clearButton.ForeColor = System.Drawing.Color.White;
+            this.clearButton.Location = new System.Drawing.Point(1823, 11);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 49);
-            this.clearButton.TabIndex = 3;
-            this.clearButton.Text = "Back";
+            this.clearButton.Size = new System.Drawing.Size(101, 49);
+            this.clearButton.TabIndex = 4;
+            this.clearButton.Text = "Return";
+            this.clearButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click_1);
             // 
             // CreateInvoiceScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 1077);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.overallPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -78,12 +78,6 @@
       <DependentUpon>ManageUsersScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Payroll.cs" />
-    <Compile Include="PayrollScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PayrollScreen.Designer.cs">
-      <DependentUpon>PayrollScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Searcher.cs" />
     <Compile Include="ViewInvoiceScreen.cs">
       <SubType>Form</SubType>
@@ -134,9 +128,6 @@
     <EmbeddedResource Include="ManageUsersScreen.resx">
       <DependentUpon>ManageUsersScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PayrollScreen.resx">
-      <DependentUpon>PayrollScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -168,7 +159,6 @@
     <Content Include="TextFiles\Employees.txt" />
     <Content Include="TextFiles\Invoices.txt" />
     <Content Include="TextFiles\Items.txt" />
-    <Content Include="TextFiles\Payroll.txt" />
     <Content Include="TextFiles\Users.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

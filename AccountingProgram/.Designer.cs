@@ -111,6 +111,8 @@
             // 
             // invoiceInteractionPanel
             // 
+            this.invoiceInteractionPanel.Controls.Add(this.editInvoicePanel);
+            this.invoiceInteractionPanel.Controls.Add(this.createInvoicePanel);
             this.invoiceInteractionPanel.Controls.Add(this.deleteInvoicePanel);
             this.invoiceInteractionPanel.Location = new System.Drawing.Point(11, 438);
             this.invoiceInteractionPanel.Name = "invoiceInteractionPanel";
@@ -119,22 +121,20 @@
             // 
             // deleteInvoicePanel
             // 
-            this.deleteInvoicePanel.Controls.Add(this.createInvoicePanel);
             this.deleteInvoicePanel.Controls.Add(this.invoiceDeleteIdTextBox);
             this.deleteInvoicePanel.Controls.Add(this.deleteInvoiceButton);
             this.deleteInvoicePanel.Controls.Add(this.label5);
             this.deleteInvoicePanel.Controls.Add(this.label6);
-            this.deleteInvoicePanel.Location = new System.Drawing.Point(8, 20);
+            this.deleteInvoicePanel.Location = new System.Drawing.Point(12, 18);
             this.deleteInvoicePanel.Name = "deleteInvoicePanel";
             this.deleteInvoicePanel.Size = new System.Drawing.Size(242, 252);
             this.deleteInvoicePanel.TabIndex = 7;
             // 
             // createInvoicePanel
             // 
-            this.createInvoicePanel.Controls.Add(this.editInvoicePanel);
             this.createInvoicePanel.Controls.Add(this.createInvoiceButton);
             this.createInvoicePanel.Controls.Add(this.label9);
-            this.createInvoicePanel.Location = new System.Drawing.Point(0, 0);
+            this.createInvoicePanel.Location = new System.Drawing.Point(12, 18);
             this.createInvoicePanel.Name = "createInvoicePanel";
             this.createInvoicePanel.Size = new System.Drawing.Size(242, 180);
             this.createInvoicePanel.TabIndex = 9;
@@ -145,7 +145,7 @@
             this.editInvoicePanel.Controls.Add(this.editInvoiceIdTextBox);
             this.editInvoicePanel.Controls.Add(this.label7);
             this.editInvoicePanel.Controls.Add(this.label8);
-            this.editInvoicePanel.Location = new System.Drawing.Point(0, 0);
+            this.editInvoicePanel.Location = new System.Drawing.Point(12, 3);
             this.editInvoicePanel.Name = "editInvoicePanel";
             this.editInvoicePanel.Size = new System.Drawing.Size(242, 252);
             this.editInvoicePanel.TabIndex = 8;

@@ -185,7 +185,7 @@
             this.displayUserLabel.Name = "displayUserLabel";
             this.displayUserLabel.Size = new System.Drawing.Size(157, 60);
             this.displayUserLabel.TabIndex = 3;
-            this.displayUserLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.displayUserLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.displayUserLabel.Click += new System.EventHandler(this.displayUserLabel_Click);
             // 
             // MainScreen

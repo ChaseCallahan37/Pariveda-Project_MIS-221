@@ -18,7 +18,6 @@ namespace AccountingProgram
 
         private static string EmployeeFileName = @"C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\TextFiles\Employees.txt";
 
-        private static string PayrollFileName = @"C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\TextFiles\Payroll.txt";
         public static List<string> PullFile(string fileName)      //Reads in the entire file, saves it to a list, then returns it
         {
             List<string> entireFile = new List<string>();
@@ -62,11 +61,6 @@ namespace AccountingProgram
         public static string GetEmployeeFileName()
         {
             return EmployeeFileName;
-        }
-
-        public static string GetPayrollFileName()
-        {
-            return PayrollFileName;
         }
     }
 }

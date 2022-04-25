@@ -22,7 +22,6 @@ namespace AccountingProgram
             Invoices.SetInvoiceDatabase(FileHandler.PullFile(FileHandler.GetInvoiceFileName()));
             ItemsDatabase.SetItemsDatabase(FileHandler.PullFile(FileHandler.GetItemFileName()));
             Employees.SetEmployeesDatabase(FileHandler.PullFile(FileHandler.GetEmployeeFileName()));
-            Payroll.SetPayrollDatabase(FileHandler.PullFile(FileHandler.GetPayrollFileName()));
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

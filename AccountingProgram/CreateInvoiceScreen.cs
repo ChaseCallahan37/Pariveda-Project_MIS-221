@@ -330,5 +330,10 @@ namespace AccountingProgram
         {
             this.Close();
         }
+
+        private void clearButton_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

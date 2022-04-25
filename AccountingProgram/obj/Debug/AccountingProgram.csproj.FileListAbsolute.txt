@@ -14,6 +14,5 @@ C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 22
 C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\obj\Debug\AccountingProgram.viewInvoiceScreen.resources
 C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\obj\Debug\AccountingProgram.ManageUsersScreen.resources
 C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\obj\Debug\AccountingProgram.CreateUserScreen.resources
-C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\obj\Debug\AccountingProgram.PayrollScreen.resources
 C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\obj\Debug\AccountingProgram.ManageEmployeesScreen.resources
 C:\Users\chase\OneDrive - The University of Alabama\School\UA 2022 Spring\MIS 221\Projects\Pariveda\AccountingProgram.sn\AccountingProgram\obj\Debug\AccountingProgram.yearsOfServiceTextBox.resources
