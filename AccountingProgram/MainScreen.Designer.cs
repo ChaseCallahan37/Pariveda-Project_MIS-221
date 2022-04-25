@@ -31,7 +31,6 @@
             this.leftPanel = new System.Windows.Forms.Panel();
             this.menuPanel = new System.Windows.Forms.Panel();
             this.employeeButton = new System.Windows.Forms.Button();
-            this.payrollButton = new System.Windows.Forms.Button();
             this.usersScreenButton = new System.Windows.Forms.Button();
             this.invoiceButton = new System.Windows.Forms.Button();
             this.menuLabel = new System.Windows.Forms.Label();
@@ -62,7 +61,6 @@
             // 
             this.menuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.menuPanel.Controls.Add(this.employeeButton);
-            this.menuPanel.Controls.Add(this.payrollButton);
             this.menuPanel.Controls.Add(this.usersScreenButton);
             this.menuPanel.Controls.Add(this.invoiceButton);
             this.menuPanel.Controls.Add(this.menuLabel);
@@ -75,7 +73,7 @@
             // employeeButton
             // 
             this.employeeButton.BackColor = System.Drawing.Color.Silver;
-            this.employeeButton.Location = new System.Drawing.Point(23, 306);
+            this.employeeButton.Location = new System.Drawing.Point(23, 211);
             this.employeeButton.Name = "employeeButton";
             this.employeeButton.Size = new System.Drawing.Size(193, 68);
             this.employeeButton.TabIndex = 4;
@@ -83,21 +81,10 @@
             this.employeeButton.UseVisualStyleBackColor = false;
             this.employeeButton.Click += new System.EventHandler(this.employeeButton_Click);
             // 
-            // payrollButton
-            // 
-            this.payrollButton.BackColor = System.Drawing.Color.Silver;
-            this.payrollButton.Location = new System.Drawing.Point(23, 175);
-            this.payrollButton.Name = "payrollButton";
-            this.payrollButton.Size = new System.Drawing.Size(193, 68);
-            this.payrollButton.TabIndex = 3;
-            this.payrollButton.Text = "Payroll";
-            this.payrollButton.UseVisualStyleBackColor = false;
-            this.payrollButton.Click += new System.EventHandler(this.payrollButton_Click);
-            // 
             // usersScreenButton
             // 
             this.usersScreenButton.BackColor = System.Drawing.Color.Silver;
-            this.usersScreenButton.Location = new System.Drawing.Point(23, 436);
+            this.usersScreenButton.Location = new System.Drawing.Point(23, 386);
             this.usersScreenButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.usersScreenButton.Name = "usersScreenButton";
             this.usersScreenButton.Size = new System.Drawing.Size(193, 68);
@@ -235,7 +222,6 @@
         private System.Windows.Forms.Panel userInfoPanel;
         private System.Windows.Forms.Label usersButton;
         private System.Windows.Forms.Button usersScreenButton;
-        private System.Windows.Forms.Button payrollButton;
         private System.Windows.Forms.Button employeeButton;
     }
 }
