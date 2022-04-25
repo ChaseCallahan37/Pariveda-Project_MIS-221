@@ -44,7 +44,6 @@
             this.editUserButton = new System.Windows.Forms.Button();
             this.companySearchPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.userSearchButton = new System.Windows.Forms.Button();
             this.searchUserTextBox = new System.Windows.Forms.TextBox();
             this.searchLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -127,7 +126,7 @@
             // createUserButton
             // 
             this.createUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.createUserButton.Location = new System.Drawing.Point(44, 698);
+            this.createUserButton.Location = new System.Drawing.Point(56, 696);
             this.createUserButton.Name = "createUserButton";
             this.createUserButton.Size = new System.Drawing.Size(105, 63);
             this.createUserButton.TabIndex = 4;
@@ -163,8 +162,7 @@
             // label4
             // 
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Location = new System.Drawing.Point(17, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(209, 40);
@@ -175,9 +173,9 @@
             // deleteUserButton
             // 
             this.deleteUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteUserButton.Location = new System.Drawing.Point(9, 215);
+            this.deleteUserButton.Location = new System.Drawing.Point(21, 222);
             this.deleteUserButton.Name = "deleteUserButton";
-            this.deleteUserButton.Size = new System.Drawing.Size(85, 42);
+            this.deleteUserButton.Size = new System.Drawing.Size(84, 34);
             this.deleteUserButton.TabIndex = 7;
             this.deleteUserButton.Text = "Delete";
             this.deleteUserButton.UseVisualStyleBackColor = true;
@@ -186,7 +184,7 @@
             // usernameTextBox
             // 
             this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.usernameTextBox.Location = new System.Drawing.Point(9, 101);
+            this.usernameTextBox.Location = new System.Drawing.Point(21, 102);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(187, 26);
             this.usernameTextBox.TabIndex = 6;
@@ -195,18 +193,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(9, 63);
+            this.label2.Location = new System.Drawing.Point(21, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 22);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Username";
             // 
             // editUserButton
             // 
             this.editUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editUserButton.Location = new System.Drawing.Point(9, 159);
+            this.editUserButton.Location = new System.Drawing.Point(21, 160);
             this.editUserButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.editUserButton.Name = "editUserButton";
             this.editUserButton.Size = new System.Drawing.Size(84, 34);
@@ -218,7 +215,6 @@
             // companySearchPanel
             // 
             this.companySearchPanel.Controls.Add(this.label1);
-            this.companySearchPanel.Controls.Add(this.userSearchButton);
             this.companySearchPanel.Controls.Add(this.searchUserTextBox);
             this.companySearchPanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.companySearchPanel.Location = new System.Drawing.Point(18, 45);
@@ -231,24 +227,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Location = new System.Drawing.Point(16, 6);
+            this.label1.Location = new System.Drawing.Point(17, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter User\'s Name";
-            // 
-            // userSearchButton
-            // 
-            this.userSearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userSearchButton.Location = new System.Drawing.Point(21, 109);
-            this.userSearchButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userSearchButton.Name = "userSearchButton";
-            this.userSearchButton.Size = new System.Drawing.Size(112, 35);
-            this.userSearchButton.TabIndex = 3;
-            this.userSearchButton.Text = "Search";
-            this.userSearchButton.UseVisualStyleBackColor = true;
-            this.userSearchButton.Click += new System.EventHandler(this.userSearchButton_Click);
             // 
             // searchUserTextBox
             // 
@@ -343,7 +327,6 @@
         private System.Windows.Forms.Button editUserButton;
         private System.Windows.Forms.Panel companySearchPanel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button userSearchButton;
         private System.Windows.Forms.TextBox searchUserTextBox;
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.Label label3;

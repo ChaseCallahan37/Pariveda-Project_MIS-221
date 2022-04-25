@@ -99,10 +99,9 @@ namespace AccountingProgram
             if (!CreateNewEmployee())
             {
                 Employees.DeleteEmployee(delEmployee);
-                MessageBox.Show("Employee Info Updated");
             }
             FileHandler.SaveFile(Employees.ToFileDatabase(), FileHandler.GetEmployeeFileName());
-            MessageBox.Show("Employee Added");
+            MessageBox.Show("Employee Database Updated");
             this.Close();
 
         }

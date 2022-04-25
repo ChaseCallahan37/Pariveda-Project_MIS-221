@@ -89,7 +89,7 @@
             this.creationPanel.Controls.Add(this.label5);
             this.creationPanel.Controls.Add(this.nameTextBox);
             this.creationPanel.Controls.Add(this.label1);
-            this.creationPanel.Location = new System.Drawing.Point(37, 151);
+            this.creationPanel.Location = new System.Drawing.Point(17, 150);
             this.creationPanel.Name = "creationPanel";
             this.creationPanel.Size = new System.Drawing.Size(423, 408);
             this.creationPanel.TabIndex = 0;
@@ -138,7 +138,7 @@
             // cancelButton
             // 
             this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelButton.Location = new System.Drawing.Point(80, 336);
+            this.cancelButton.Location = new System.Drawing.Point(134, 336);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 34);
             this.cancelButton.TabIndex = 18;
@@ -149,7 +149,7 @@
             // saveButton
             // 
             this.saveButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveButton.Location = new System.Drawing.Point(238, 336);
+            this.saveButton.Location = new System.Drawing.Point(297, 336);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(76, 34);
             this.saveButton.TabIndex = 17;

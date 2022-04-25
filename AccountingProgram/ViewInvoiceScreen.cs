@@ -240,8 +240,11 @@ namespace AccountingProgram
                 Searcher invoiceSearcher = new Searcher(delInvoices);
                 if(invoiceSearcher.FindInvoice())
                 {
-                    Invoices.RemoveFromInvoiceDatabase(delInvoices);
-                    MessageBox.Show("Invoice Deleted");
+                    DialogResult dialogResult = MessageBox.Show("Would you like to delete this Invoice?", "Delete Invoice", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        Invoices.RemoveFromInvoiceDatabase(delInvoices);
+                    }
                 }
                 else
                 {

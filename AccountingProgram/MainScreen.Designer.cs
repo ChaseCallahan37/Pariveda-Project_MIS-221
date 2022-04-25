@@ -77,7 +77,7 @@
             this.employeeButton.Name = "employeeButton";
             this.employeeButton.Size = new System.Drawing.Size(193, 68);
             this.employeeButton.TabIndex = 4;
-            this.employeeButton.Text = "Employee";
+            this.employeeButton.Text = "Handle\r\nEmployees\r\n";
             this.employeeButton.UseVisualStyleBackColor = false;
             this.employeeButton.Click += new System.EventHandler(this.employeeButton_Click);
             // 
@@ -89,7 +89,7 @@
             this.usersScreenButton.Name = "usersScreenButton";
             this.usersScreenButton.Size = new System.Drawing.Size(193, 68);
             this.usersScreenButton.TabIndex = 2;
-            this.usersScreenButton.Text = "Edit Users";
+            this.usersScreenButton.Text = "Handle\r\nUsers";
             this.usersScreenButton.UseVisualStyleBackColor = false;
             this.usersScreenButton.Click += new System.EventHandler(this.usersScreenButton_Click);
             // 
@@ -101,7 +101,7 @@
             this.invoiceButton.Name = "invoiceButton";
             this.invoiceButton.Size = new System.Drawing.Size(193, 68);
             this.invoiceButton.TabIndex = 1;
-            this.invoiceButton.Text = "Invoices";
+            this.invoiceButton.Text = "Handle\r\nInvoices";
             this.invoiceButton.UseVisualStyleBackColor = false;
             this.invoiceButton.Click += new System.EventHandler(this.invoiceButton_Click);
             // 

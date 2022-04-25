@@ -260,10 +260,10 @@
             this.createInvoiceRadio.AutoSize = true;
             this.createInvoiceRadio.Location = new System.Drawing.Point(3, 163);
             this.createInvoiceRadio.Name = "createInvoiceRadio";
-            this.createInvoiceRadio.Size = new System.Drawing.Size(136, 24);
+            this.createInvoiceRadio.Size = new System.Drawing.Size(160, 24);
             this.createInvoiceRadio.TabIndex = 11;
             this.createInvoiceRadio.TabStop = true;
-            this.createInvoiceRadio.Text = "Create Invoice";
+            this.createInvoiceRadio.Text = "Create An Invoice";
             this.createInvoiceRadio.UseVisualStyleBackColor = true;
             this.createInvoiceRadio.CheckedChanged += new System.EventHandler(this.createInvoiceRadio_CheckedChanged);
             // 
@@ -272,10 +272,10 @@
             this.deleteInvoiceRadio.AutoSize = true;
             this.deleteInvoiceRadio.Location = new System.Drawing.Point(3, 108);
             this.deleteInvoiceRadio.Name = "deleteInvoiceRadio";
-            this.deleteInvoiceRadio.Size = new System.Drawing.Size(135, 24);
+            this.deleteInvoiceRadio.Size = new System.Drawing.Size(159, 24);
             this.deleteInvoiceRadio.TabIndex = 10;
             this.deleteInvoiceRadio.TabStop = true;
-            this.deleteInvoiceRadio.Text = "Delete Invoice";
+            this.deleteInvoiceRadio.Text = "Delete An Invoice";
             this.deleteInvoiceRadio.UseVisualStyleBackColor = true;
             this.deleteInvoiceRadio.CheckedChanged += new System.EventHandler(this.deleteInvoiceRadio_CheckedChanged);
             // 
@@ -284,10 +284,10 @@
             this.editInvoiceRadio.AutoSize = true;
             this.editInvoiceRadio.Location = new System.Drawing.Point(3, 58);
             this.editInvoiceRadio.Name = "editInvoiceRadio";
-            this.editInvoiceRadio.Size = new System.Drawing.Size(116, 24);
+            this.editInvoiceRadio.Size = new System.Drawing.Size(140, 24);
             this.editInvoiceRadio.TabIndex = 9;
             this.editInvoiceRadio.TabStop = true;
-            this.editInvoiceRadio.Text = "Edit Invoice";
+            this.editInvoiceRadio.Text = "Edit An Invoice";
             this.editInvoiceRadio.UseVisualStyleBackColor = true;
             this.editInvoiceRadio.CheckedChanged += new System.EventHandler(this.editInvoiceRadio_CheckedChanged);
             // 

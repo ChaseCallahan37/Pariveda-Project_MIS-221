@@ -46,7 +46,7 @@ namespace AccountingProgram
 
         }
         
-        private void BuildDeleteEmployee(Employees currEmployee)
+        private bool BuildDeleteEmployee(Employees currEmployee)
         {
             if(Utilities.CheckIsNum(employeeDeleteIdTextBox.Text))
             {
@@ -54,7 +54,7 @@ namespace AccountingProgram
                 Searcher delSearcher = new Searcher(deleteEmp);
                 if(delSearcher.FindEmployee())
                 {
-                    MessageBox.Show("Found!");
+                    return true;
                 }
                 else
                 {
@@ -65,6 +65,7 @@ namespace AccountingProgram
             {
                 UserNotFound();
             }
+            return false;
         }
 
         private void BuildSearchEmployee()
@@ -158,12 +159,14 @@ namespace AccountingProgram
 
         private void deleteEmployeeButton_Click(object sender, EventArgs e)
         {
-            BuildDeleteEmployee(deleteEmp);
-            DialogResult dialogResult = MessageBox.Show("Would you like to delete this Employee?", "Delete Employee", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            if(BuildDeleteEmployee(deleteEmp))
             {
-                Employees.DeleteEmployee(deleteEmp);
-            }
+                DialogResult dialogResult = MessageBox.Show("Would you like to delete this Employee?", "Delete Employee", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Employees.DeleteEmployee(deleteEmp);
+                }
+            } 
         }
 
         private void employeeDeleteIdTextBox_TextChanged(object sender, EventArgs e)

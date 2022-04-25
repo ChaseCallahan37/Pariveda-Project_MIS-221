@@ -251,7 +251,7 @@ namespace AccountingProgram
         public void CreateId()
         {
             IncInvoiceIdCount();
-            invoiceIdCount = Invoices.GetInvoiceIdCount();
+            id = invoiceIdCount;
         }
 
         public static void IncInvoiceIdCount()
