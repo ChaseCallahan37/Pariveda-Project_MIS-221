@@ -177,13 +177,13 @@ namespace AccountingProgram
         public string ToStringDisplay()
         {
             string invoiceLine;
-            invoiceLine = $"Id: {id, -5}Customer Name: {customerName, -15}Date Due: {dateDue.ToString("M"), -13}Invoice Total: {invoiceTotal,-10}Items Sold & Quantity: ";
+            invoiceLine = $"Id: {id, -5}Customer Name: {customerName, -15}Date Due: {dateDue.ToString("M"), -13}Invoice Total: ${invoiceTotal,-10}Items Sold & Quantity: ";
             int count = 0;
             foreach( Items item in invoiceItems)
             {
                 if(count > 0)
                 {
-                    invoiceLine += $"\r\n{"", 110}";
+                    invoiceLine += $"\r\n{"", 112}";
                 }
                 string addToInvoice = $"{item.GetName()} X {item.GetQuantity()}";
                 invoiceLine += $"{addToInvoice, -13}";

@@ -40,6 +40,7 @@
             this.userInfoPanel = new System.Windows.Forms.Panel();
             this.clearButton = new System.Windows.Forms.Button();
             this.displayUserLabel = new System.Windows.Forms.Label();
+            this.editProfileButton = new System.Windows.Forms.Button();
             this.leftPanel.SuspendLayout();
             this.menuPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -73,6 +74,7 @@
             // employeeButton
             // 
             this.employeeButton.BackColor = System.Drawing.Color.Silver;
+            this.employeeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.employeeButton.Location = new System.Drawing.Point(23, 211);
             this.employeeButton.Name = "employeeButton";
             this.employeeButton.Size = new System.Drawing.Size(193, 68);
@@ -84,6 +86,7 @@
             // usersScreenButton
             // 
             this.usersScreenButton.BackColor = System.Drawing.Color.Silver;
+            this.usersScreenButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usersScreenButton.Location = new System.Drawing.Point(23, 386);
             this.usersScreenButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.usersScreenButton.Name = "usersScreenButton";
@@ -96,6 +99,7 @@
             // invoiceButton
             // 
             this.invoiceButton.BackColor = System.Drawing.Color.Silver;
+            this.invoiceButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.invoiceButton.Location = new System.Drawing.Point(23, 52);
             this.invoiceButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.invoiceButton.Name = "invoiceButton";
@@ -119,7 +123,8 @@
             // logoutButton
             // 
             this.logoutButton.BackColor = System.Drawing.Color.Silver;
-            this.logoutButton.Location = new System.Drawing.Point(0, 143);
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.Location = new System.Drawing.Point(0, 236);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(193, 68);
@@ -156,6 +161,7 @@
             // userInfoPanel
             // 
             this.userInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.userInfoPanel.Controls.Add(this.editProfileButton);
             this.userInfoPanel.Controls.Add(this.clearButton);
             this.userInfoPanel.Controls.Add(this.logoutButton);
             this.userInfoPanel.Controls.Add(this.displayUserLabel);
@@ -168,6 +174,7 @@
             // clearButton
             // 
             this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.clearButton.Location = new System.Drawing.Point(161, 0);
             this.clearButton.Name = "clearButton";
@@ -181,12 +188,25 @@
             // 
             this.displayUserLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.displayUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayUserLabel.Location = new System.Drawing.Point(4, 78);
+            this.displayUserLabel.Location = new System.Drawing.Point(0, 68);
             this.displayUserLabel.Name = "displayUserLabel";
-            this.displayUserLabel.Size = new System.Drawing.Size(157, 60);
+            this.displayUserLabel.Size = new System.Drawing.Size(203, 70);
             this.displayUserLabel.TabIndex = 3;
             this.displayUserLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.displayUserLabel.Click += new System.EventHandler(this.displayUserLabel_Click);
+            // 
+            // editProfileButton
+            // 
+            this.editProfileButton.BackColor = System.Drawing.Color.Silver;
+            this.editProfileButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editProfileButton.Location = new System.Drawing.Point(0, 158);
+            this.editProfileButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.editProfileButton.Name = "editProfileButton";
+            this.editProfileButton.Size = new System.Drawing.Size(193, 68);
+            this.editProfileButton.TabIndex = 4;
+            this.editProfileButton.Text = "Edit Profile";
+            this.editProfileButton.UseVisualStyleBackColor = false;
+            this.editProfileButton.Click += new System.EventHandler(this.editProfileButton_Click);
             // 
             // MainScreen
             // 
@@ -224,5 +244,6 @@
         private System.Windows.Forms.Label usersButton;
         private System.Windows.Forms.Button usersScreenButton;
         private System.Windows.Forms.Button employeeButton;
+        private System.Windows.Forms.Button editProfileButton;
     }
 }

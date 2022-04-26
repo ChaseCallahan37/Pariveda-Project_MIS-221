@@ -27,11 +27,26 @@ namespace AccountingProgram
             InitializeComponent();
             mainUser = user;
             ShowUserInfo();
+            CheckDisplay();
         }
 
         private void ShowUserInfo()
         {
-            displayUserLabel.Text = $"Welcome\n{mainUser.GetName()}!";
+            displayUserLabel.Text = $"Welcome\r\n{mainUser.GetName()}!";
+        }
+
+        private void CheckDisplay()
+        {
+            if (mainUser.GetJobTitle() == "accountant")
+            {
+                employeeButton.Visible = false;
+                usersScreenButton.Visible = false;
+            }
+            if(mainUser.GetJobTitle() == "human resource")
+            {
+                invoiceButton.Visible = false;
+                usersScreenButton.Visible = false;
+            }
         }
 
         private void CloseEverything()
@@ -115,6 +130,13 @@ namespace AccountingProgram
         private void payrollButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void editProfileButton_Click(object sender, EventArgs e)
+        {
+            //Create the edit user screen and hide the job title field
+            CreateUserScreen createUserScreen = new CreateUserScreen(mainUser, true);
+            createUserScreen.Show();
         }
     }
 }

@@ -30,12 +30,27 @@ namespace AccountingProgram
             FillOutForm();
         }
 
+        public CreateUserScreen(Users newUser, bool fromMainScreen)
+        {
+            delUser.BuildUser(newUser);
+            this.newUser.BuildUser(newUser);
+            InitializeComponent();
+            FillOutForm();
+            HideObjects();
+        }
+
+        private void HideObjects()
+        {
+            jobTitleComboBox.Visible = false;
+            jobTitleLabel.Visible = false;
+        }
+
         private void FillOutForm()
         {
             nameTextBox.Text = newUser.GetName();
             usernameTextBox.Text = newUser.GetUsername();
             passwordTextBox.Text = newUser.GetPassword();
-            comboBox1.Text = newUser.GetJobTitle();
+            jobTitleComboBox.Text = newUser.GetJobTitle();
         }
 
         public void CloseWindow()
@@ -57,7 +72,7 @@ namespace AccountingProgram
             {
                 return false;
             }
-            if(comboBox1.Text == "")
+            if(jobTitleComboBox.Text == "")
             {
                 return false;
             }
@@ -69,7 +84,7 @@ namespace AccountingProgram
             newUser.SetName(nameTextBox.Text);
             newUser.SetPassword(passwordTextBox.Text);
             newUser.SetUsername(usernameTextBox.Text);
-            newUser.SetJobTitle(comboBox1.Text);
+            newUser.SetJobTitle(jobTitleComboBox.Text);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -149,6 +164,16 @@ namespace AccountingProgram
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void centerPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

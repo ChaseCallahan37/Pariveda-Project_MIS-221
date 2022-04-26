@@ -259,9 +259,7 @@ namespace AccountingProgram
         }
 
         private void invoiceTotalLabel_Click(object sender, EventArgs e)
-        {
-            invoiceTotalLabel.Text = invoiceTotal.ToString();
-            
+        {  
         }
 
         private void saveIncoiceButton_Click(object sender, EventArgs e)
@@ -318,7 +316,7 @@ namespace AccountingProgram
                 delTotal = double.Parse(deluxeBagTotal.Text);
             }
             invoiceTotal = luxTotal + stanTotal + delTotal;
-            invoiceTotalLabel.Text = invoiceTotal.ToString();
+            invoiceTotalLabel.Text = $"$ {invoiceTotal.ToString()}";
         }
 
         private void overallPanel_Paint(object sender, PaintEventArgs e)

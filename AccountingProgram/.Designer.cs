@@ -33,15 +33,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.invoiceInteractionPanel = new System.Windows.Forms.Panel();
-            this.deleteInvoicePanel = new System.Windows.Forms.Panel();
-            this.createInvoicePanel = new System.Windows.Forms.Panel();
             this.editInvoicePanel = new System.Windows.Forms.Panel();
             this.editInvoiceButton = new System.Windows.Forms.Button();
             this.editInvoiceIdTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.createInvoicePanel = new System.Windows.Forms.Panel();
             this.createInvoiceButton = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.deleteInvoicePanel = new System.Windows.Forms.Panel();
             this.invoiceDeleteIdTextBox = new System.Windows.Forms.TextBox();
             this.deleteInvoiceButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,9 +65,9 @@
             this.panel1.SuspendLayout();
             this.searchPanel.SuspendLayout();
             this.invoiceInteractionPanel.SuspendLayout();
-            this.deleteInvoicePanel.SuspendLayout();
-            this.createInvoicePanel.SuspendLayout();
             this.editInvoicePanel.SuspendLayout();
+            this.createInvoicePanel.SuspendLayout();
+            this.deleteInvoicePanel.SuspendLayout();
             this.employeeChoicePanel.SuspendLayout();
             this.companySearchPanel.SuspendLayout();
             this.topPanel.SuspendLayout();
@@ -83,7 +83,7 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1946, 1000);
+            this.mainPanel.Size = new System.Drawing.Size(1946, 1106);
             this.mainPanel.TabIndex = 0;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
@@ -93,7 +93,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1632, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 1000);
+            this.panel1.Size = new System.Drawing.Size(314, 1106);
             this.panel1.TabIndex = 2;
             // 
             // searchPanel
@@ -105,7 +105,7 @@
             this.searchPanel.Location = new System.Drawing.Point(16, 152);
             this.searchPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.searchPanel.Name = "searchPanel";
-            this.searchPanel.Size = new System.Drawing.Size(289, 843);
+            this.searchPanel.Size = new System.Drawing.Size(289, 742);
             this.searchPanel.TabIndex = 3;
             this.searchPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.searchPanel_Paint);
             // 
@@ -114,33 +114,14 @@
             this.invoiceInteractionPanel.Controls.Add(this.editInvoicePanel);
             this.invoiceInteractionPanel.Controls.Add(this.createInvoicePanel);
             this.invoiceInteractionPanel.Controls.Add(this.deleteInvoicePanel);
-            this.invoiceInteractionPanel.Location = new System.Drawing.Point(11, 438);
+            this.invoiceInteractionPanel.Location = new System.Drawing.Point(6, 417);
             this.invoiceInteractionPanel.Name = "invoiceInteractionPanel";
-            this.invoiceInteractionPanel.Size = new System.Drawing.Size(268, 296);
+            this.invoiceInteractionPanel.Size = new System.Drawing.Size(283, 296);
             this.invoiceInteractionPanel.TabIndex = 10;
-            // 
-            // deleteInvoicePanel
-            // 
-            this.deleteInvoicePanel.Controls.Add(this.invoiceDeleteIdTextBox);
-            this.deleteInvoicePanel.Controls.Add(this.deleteInvoiceButton);
-            this.deleteInvoicePanel.Controls.Add(this.label5);
-            this.deleteInvoicePanel.Controls.Add(this.label6);
-            this.deleteInvoicePanel.Location = new System.Drawing.Point(12, 18);
-            this.deleteInvoicePanel.Name = "deleteInvoicePanel";
-            this.deleteInvoicePanel.Size = new System.Drawing.Size(242, 252);
-            this.deleteInvoicePanel.TabIndex = 7;
-            // 
-            // createInvoicePanel
-            // 
-            this.createInvoicePanel.Controls.Add(this.createInvoiceButton);
-            this.createInvoicePanel.Controls.Add(this.label9);
-            this.createInvoicePanel.Location = new System.Drawing.Point(12, 18);
-            this.createInvoicePanel.Name = "createInvoicePanel";
-            this.createInvoicePanel.Size = new System.Drawing.Size(242, 180);
-            this.createInvoicePanel.TabIndex = 9;
             // 
             // editInvoicePanel
             // 
+            this.editInvoicePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.editInvoicePanel.Controls.Add(this.editInvoiceButton);
             this.editInvoicePanel.Controls.Add(this.editInvoiceIdTextBox);
             this.editInvoicePanel.Controls.Add(this.label7);
@@ -187,6 +168,16 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "ID Number";
             // 
+            // createInvoicePanel
+            // 
+            this.createInvoicePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.createInvoicePanel.Controls.Add(this.createInvoiceButton);
+            this.createInvoicePanel.Controls.Add(this.label9);
+            this.createInvoicePanel.Location = new System.Drawing.Point(12, 18);
+            this.createInvoicePanel.Name = "createInvoicePanel";
+            this.createInvoicePanel.Size = new System.Drawing.Size(242, 180);
+            this.createInvoicePanel.TabIndex = 9;
+            // 
             // createInvoiceButton
             // 
             this.createInvoiceButton.Location = new System.Drawing.Point(18, 103);
@@ -205,6 +196,18 @@
             this.label9.Size = new System.Drawing.Size(142, 80);
             this.label9.TabIndex = 0;
             this.label9.Text = "Would you like to\r\nCreate an Invoice?\r\n\r\n\r\n";
+            // 
+            // deleteInvoicePanel
+            // 
+            this.deleteInvoicePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.deleteInvoicePanel.Controls.Add(this.invoiceDeleteIdTextBox);
+            this.deleteInvoicePanel.Controls.Add(this.deleteInvoiceButton);
+            this.deleteInvoicePanel.Controls.Add(this.label5);
+            this.deleteInvoicePanel.Controls.Add(this.label6);
+            this.deleteInvoicePanel.Location = new System.Drawing.Point(12, 18);
+            this.deleteInvoicePanel.Name = "deleteInvoicePanel";
+            this.deleteInvoicePanel.Size = new System.Drawing.Size(242, 252);
+            this.deleteInvoicePanel.TabIndex = 7;
             // 
             // invoiceDeleteIdTextBox
             // 
@@ -245,14 +248,15 @@
             // 
             // employeeChoicePanel
             // 
+            this.employeeChoicePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.employeeChoicePanel.Controls.Add(this.createInvoiceRadio);
             this.employeeChoicePanel.Controls.Add(this.deleteInvoiceRadio);
             this.employeeChoicePanel.Controls.Add(this.editInvoiceRadio);
             this.employeeChoicePanel.Controls.Add(this.label4);
             this.employeeChoicePanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.employeeChoicePanel.Location = new System.Drawing.Point(11, 207);
+            this.employeeChoicePanel.Location = new System.Drawing.Point(18, 172);
             this.employeeChoicePanel.Name = "employeeChoicePanel";
-            this.employeeChoicePanel.Size = new System.Drawing.Size(206, 216);
+            this.employeeChoicePanel.Size = new System.Drawing.Size(217, 216);
             this.employeeChoicePanel.TabIndex = 9;
             // 
             // createInvoiceRadio
@@ -309,7 +313,7 @@
             this.companySearchPanel.Location = new System.Drawing.Point(18, 45);
             this.companySearchPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.companySearchPanel.Name = "companySearchPanel";
-            this.companySearchPanel.Size = new System.Drawing.Size(190, 154);
+            this.companySearchPanel.Size = new System.Drawing.Size(190, 105);
             this.companySearchPanel.TabIndex = 8;
             // 
             // label1
@@ -355,7 +359,7 @@
             this.viewTextBox.Multiline = true;
             this.viewTextBox.Name = "viewTextBox";
             this.viewTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.viewTextBox.Size = new System.Drawing.Size(1612, 804);
+            this.viewTextBox.Size = new System.Drawing.Size(1612, 913);
             this.viewTextBox.TabIndex = 0;
             this.viewTextBox.TextChanged += new System.EventHandler(this.viewTextBox_TextChanged);
             // 
@@ -422,7 +426,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
-            this.ClientSize = new System.Drawing.Size(1946, 1000);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -438,12 +442,12 @@
             this.panel1.ResumeLayout(false);
             this.searchPanel.ResumeLayout(false);
             this.invoiceInteractionPanel.ResumeLayout(false);
-            this.deleteInvoicePanel.ResumeLayout(false);
-            this.deleteInvoicePanel.PerformLayout();
-            this.createInvoicePanel.ResumeLayout(false);
-            this.createInvoicePanel.PerformLayout();
             this.editInvoicePanel.ResumeLayout(false);
             this.editInvoicePanel.PerformLayout();
+            this.createInvoicePanel.ResumeLayout(false);
+            this.createInvoicePanel.PerformLayout();
+            this.deleteInvoicePanel.ResumeLayout(false);
+            this.deleteInvoicePanel.PerformLayout();
             this.employeeChoicePanel.ResumeLayout(false);
             this.employeeChoicePanel.PerformLayout();
             this.companySearchPanel.ResumeLayout(false);

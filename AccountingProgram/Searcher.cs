@@ -60,6 +60,11 @@ namespace AccountingProgram
         {
             //Searches for employees that contain any similar information as the search employee
             string toPrint = "";
+            string underLine = "";
+            for (int i = 0; i < 149; i++)
+            {
+                underLine += "_";
+            }
             foreach (Employees curremployee in employeeDatabase)
             {
                 if(searchEmployee.GetEmployeeId() == -1)
@@ -76,10 +81,10 @@ namespace AccountingProgram
                     && curremployee.GetDept().Contains(searchEmployee.GetDept())
                     && curremployee.GetEmployeeId() == searchEmployee.GetEmployeeId())
                     {
-                        toPrint += $"{curremployee.ToStringDisplay()} \r\n";
+                        toPrint += $"{curremployee.ToStringDisplay()}\r\n";
                     }
                 }
-                
+                toPrint += $"{underLine}";
             }
             return toPrint;
         }
@@ -145,8 +150,13 @@ namespace AccountingProgram
             {
                 if(currInvoice.GetCustomerName().Contains(searchInvoice.GetCustomerName()))
                 {
-                    toPrint += $"{currInvoice.ToStringDisplay()}";
-                    toPrint += "\r\n";
+                    string underline = "";
+                    string line = $"{currInvoice.ToStringDisplay()}";
+                    for(int i = 0; i < 150; i++)
+                    {
+                        underline += "_";
+                    }
+                    toPrint += $"{line}\r\n{underline}";
                 }
             }
             return toPrint;

@@ -54,6 +54,7 @@
             // 
             // loginButton
             // 
+            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.Location = new System.Drawing.Point(168, 195);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(76, 38);

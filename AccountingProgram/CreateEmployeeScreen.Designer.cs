@@ -96,7 +96,7 @@
             // 
             // yearsServiceTextBox
             // 
-            this.yearsServiceTextBox.Location = new System.Drawing.Point(134, 78);
+            this.yearsServiceTextBox.Location = new System.Drawing.Point(161, 78);
             this.yearsServiceTextBox.Name = "yearsServiceTextBox";
             this.yearsServiceTextBox.Size = new System.Drawing.Size(239, 26);
             this.yearsServiceTextBox.TabIndex = 22;
@@ -105,7 +105,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 78);
+            this.label6.Location = new System.Drawing.Point(3, 84);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 20);
             this.label6.TabIndex = 21;
@@ -115,7 +115,7 @@
             // 
             this.hourlyRadio.AutoSize = true;
             this.hourlyRadio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hourlyRadio.Location = new System.Drawing.Point(141, 260);
+            this.hourlyRadio.Location = new System.Drawing.Point(161, 271);
             this.hourlyRadio.Name = "hourlyRadio";
             this.hourlyRadio.Size = new System.Drawing.Size(79, 24);
             this.hourlyRadio.TabIndex = 20;
@@ -127,7 +127,7 @@
             // 
             this.salaryRadio.AutoSize = true;
             this.salaryRadio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.salaryRadio.Location = new System.Drawing.Point(141, 216);
+            this.salaryRadio.Location = new System.Drawing.Point(161, 227);
             this.salaryRadio.Name = "salaryRadio";
             this.salaryRadio.Size = new System.Drawing.Size(78, 24);
             this.salaryRadio.TabIndex = 19;
@@ -167,7 +167,7 @@
             "human resource",
             "management",
             "manufactoring"});
-            this.deptComboBox.Location = new System.Drawing.Point(134, 126);
+            this.deptComboBox.Location = new System.Drawing.Point(161, 126);
             this.deptComboBox.Name = "deptComboBox";
             this.deptComboBox.Size = new System.Drawing.Size(239, 28);
             this.deptComboBox.TabIndex = 8;
@@ -175,7 +175,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 218);
+            this.label4.Location = new System.Drawing.Point(16, 244);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 40);
             this.label4.TabIndex = 16;
@@ -183,7 +183,7 @@
             // 
             // payRateTextBox
             // 
-            this.payRateTextBox.Location = new System.Drawing.Point(134, 175);
+            this.payRateTextBox.Location = new System.Drawing.Point(161, 175);
             this.payRateTextBox.Name = "payRateTextBox";
             this.payRateTextBox.Size = new System.Drawing.Size(239, 26);
             this.payRateTextBox.TabIndex = 15;
@@ -192,7 +192,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 175);
+            this.label3.Location = new System.Drawing.Point(54, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 14;
@@ -202,7 +202,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 126);
+            this.label5.Location = new System.Drawing.Point(34, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 20);
             this.label5.TabIndex = 12;
@@ -210,7 +210,7 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(134, 26);
+            this.nameTextBox.Location = new System.Drawing.Point(161, 26);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(239, 26);
             this.nameTextBox.TabIndex = 7;
@@ -219,7 +219,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 26);
+            this.label1.Location = new System.Drawing.Point(77, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 6;

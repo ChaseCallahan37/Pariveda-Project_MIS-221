@@ -36,12 +36,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.editEmployeePanel = new System.Windows.Forms.Panel();
             this.deleteEmployeePanel = new System.Windows.Forms.Panel();
             this.deleteEmployeeButton = new System.Windows.Forms.Button();
             this.employeeDeleteIdTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.editEmployeePanel = new System.Windows.Forms.Panel();
             this.editEmployee = new System.Windows.Forms.Button();
             this.editEmployeeTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,8 +69,8 @@
             this.panel4.SuspendLayout();
             this.searchPanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.editEmployeePanel.SuspendLayout();
             this.deleteEmployeePanel.SuspendLayout();
+            this.editEmployeePanel.SuspendLayout();
             this.createEmployeePanel.SuspendLayout();
             this.employeeChoicePanel.SuspendLayout();
             this.companySearchPanel.SuspendLayout();
@@ -86,11 +86,11 @@
             // 
             this.viewEmployeeSearchTextBox.Enabled = false;
             this.viewEmployeeSearchTextBox.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewEmployeeSearchTextBox.Location = new System.Drawing.Point(35, 159);
+            this.viewEmployeeSearchTextBox.Location = new System.Drawing.Point(35, 119);
             this.viewEmployeeSearchTextBox.Multiline = true;
             this.viewEmployeeSearchTextBox.Name = "viewEmployeeSearchTextBox";
             this.viewEmployeeSearchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.viewEmployeeSearchTextBox.Size = new System.Drawing.Size(1601, 835);
+            this.viewEmployeeSearchTextBox.Size = new System.Drawing.Size(1606, 949);
             this.viewEmployeeSearchTextBox.TabIndex = 8;
             this.viewEmployeeSearchTextBox.TextChanged += new System.EventHandler(this.viewEmployeeSearchTextBox_TextChanged);
             // 
@@ -144,30 +144,19 @@
             this.panel2.Controls.Add(this.deleteEmployeePanel);
             this.panel2.Controls.Add(this.editEmployeePanel);
             this.panel2.Controls.Add(this.createEmployeePanel);
-            this.panel2.Location = new System.Drawing.Point(18, 469);
+            this.panel2.Location = new System.Drawing.Point(12, 468);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(255, 386);
+            this.panel2.Size = new System.Drawing.Size(255, 275);
             this.panel2.TabIndex = 7;
-            // 
-            // editEmployeePanel
-            // 
-            this.editEmployeePanel.Controls.Add(this.editEmployee);
-            this.editEmployeePanel.Controls.Add(this.editEmployeeTextBox);
-            this.editEmployeePanel.Controls.Add(this.label7);
-            this.editEmployeePanel.Controls.Add(this.label8);
-            this.editEmployeePanel.Location = new System.Drawing.Point(7, 12);
-            this.editEmployeePanel.Name = "editEmployeePanel";
-            this.editEmployeePanel.Size = new System.Drawing.Size(242, 252);
-            this.editEmployeePanel.TabIndex = 8;
-            this.editEmployeePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.editEmployeePanel_Paint);
             // 
             // deleteEmployeePanel
             // 
+            this.deleteEmployeePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.deleteEmployeePanel.Controls.Add(this.deleteEmployeeButton);
             this.deleteEmployeePanel.Controls.Add(this.employeeDeleteIdTextBox);
             this.deleteEmployeePanel.Controls.Add(this.label5);
             this.deleteEmployeePanel.Controls.Add(this.label6);
-            this.deleteEmployeePanel.Location = new System.Drawing.Point(7, 12);
+            this.deleteEmployeePanel.Location = new System.Drawing.Point(9, 15);
             this.deleteEmployeePanel.Name = "deleteEmployeePanel";
             this.deleteEmployeePanel.Size = new System.Drawing.Size(242, 252);
             this.deleteEmployeePanel.TabIndex = 7;
@@ -175,6 +164,7 @@
             // 
             // deleteEmployeeButton
             // 
+            this.deleteEmployeeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteEmployeeButton.Location = new System.Drawing.Point(8, 178);
             this.deleteEmployeeButton.Name = "deleteEmployeeButton";
             this.deleteEmployeeButton.Size = new System.Drawing.Size(148, 52);
@@ -204,15 +194,28 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(16, 82);
+            this.label6.Location = new System.Drawing.Point(8, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 22);
             this.label6.TabIndex = 9;
             this.label6.Text = "ID Number";
             // 
+            // editEmployeePanel
+            // 
+            this.editEmployeePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.editEmployeePanel.Controls.Add(this.editEmployee);
+            this.editEmployeePanel.Controls.Add(this.editEmployeeTextBox);
+            this.editEmployeePanel.Controls.Add(this.label7);
+            this.editEmployeePanel.Controls.Add(this.label8);
+            this.editEmployeePanel.Location = new System.Drawing.Point(9, 15);
+            this.editEmployeePanel.Name = "editEmployeePanel";
+            this.editEmployeePanel.Size = new System.Drawing.Size(242, 252);
+            this.editEmployeePanel.TabIndex = 8;
+            this.editEmployeePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.editEmployeePanel_Paint);
+            // 
             // editEmployee
             // 
-            this.editEmployee.Location = new System.Drawing.Point(18, 178);
+            this.editEmployee.Location = new System.Drawing.Point(8, 179);
             this.editEmployee.Name = "editEmployee";
             this.editEmployee.Size = new System.Drawing.Size(148, 52);
             this.editEmployee.TabIndex = 11;
@@ -240,7 +243,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Location = new System.Drawing.Point(16, 82);
+            this.label8.Location = new System.Drawing.Point(8, 83);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 22);
             this.label8.TabIndex = 9;
@@ -248,16 +251,17 @@
             // 
             // createEmployeePanel
             // 
+            this.createEmployeePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.createEmployeePanel.Controls.Add(this.createEmployee);
             this.createEmployeePanel.Controls.Add(this.label9);
             this.createEmployeePanel.Location = new System.Drawing.Point(10, 15);
             this.createEmployeePanel.Name = "createEmployeePanel";
-            this.createEmployeePanel.Size = new System.Drawing.Size(242, 252);
+            this.createEmployeePanel.Size = new System.Drawing.Size(242, 160);
             this.createEmployeePanel.TabIndex = 9;
             // 
             // createEmployee
             // 
-            this.createEmployee.Location = new System.Drawing.Point(34, 107);
+            this.createEmployee.Location = new System.Drawing.Point(16, 72);
             this.createEmployee.Name = "createEmployee";
             this.createEmployee.Size = new System.Drawing.Size(148, 52);
             this.createEmployee.TabIndex = 11;
@@ -276,6 +280,7 @@
             // 
             // employeeChoicePanel
             // 
+            this.employeeChoicePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.employeeChoicePanel.Controls.Add(this.createEmployeeRadio);
             this.employeeChoicePanel.Controls.Add(this.deleteEmployeeRadio);
             this.employeeChoicePanel.Controls.Add(this.editEmployeeRadio);
@@ -289,6 +294,7 @@
             // createEmployeeRadio
             // 
             this.createEmployeeRadio.AutoSize = true;
+            this.createEmployeeRadio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createEmployeeRadio.Location = new System.Drawing.Point(3, 163);
             this.createEmployeeRadio.Name = "createEmployeeRadio";
             this.createEmployeeRadio.Size = new System.Drawing.Size(156, 24);
@@ -301,6 +307,7 @@
             // deleteEmployeeRadio
             // 
             this.deleteEmployeeRadio.AutoSize = true;
+            this.deleteEmployeeRadio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteEmployeeRadio.Location = new System.Drawing.Point(3, 108);
             this.deleteEmployeeRadio.Name = "deleteEmployeeRadio";
             this.deleteEmployeeRadio.Size = new System.Drawing.Size(155, 24);
@@ -313,6 +320,7 @@
             // editEmployeeRadio
             // 
             this.editEmployeeRadio.AutoSize = true;
+            this.editEmployeeRadio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editEmployeeRadio.Location = new System.Drawing.Point(3, 58);
             this.editEmployeeRadio.Name = "editEmployeeRadio";
             this.editEmployeeRadio.Size = new System.Drawing.Size(136, 24);
@@ -333,6 +341,7 @@
             // 
             // companySearchPanel
             // 
+            this.companySearchPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.companySearchPanel.Controls.Add(this.label3);
             this.companySearchPanel.Controls.Add(this.searchIdemployeeTextBox);
             this.companySearchPanel.Controls.Add(this.searchEmployeeDeptTextBox);
@@ -340,7 +349,7 @@
             this.companySearchPanel.Controls.Add(this.label1);
             this.companySearchPanel.Controls.Add(this.searchEmployeesTextBox);
             this.companySearchPanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.companySearchPanel.Location = new System.Drawing.Point(18, 45);
+            this.companySearchPanel.Location = new System.Drawing.Point(18, 30);
             this.companySearchPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.companySearchPanel.Name = "companySearchPanel";
             this.companySearchPanel.Size = new System.Drawing.Size(218, 187);
@@ -403,10 +412,11 @@
             // 
             this.searchLabel.AutoSize = true;
             this.searchLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.searchLabel.Location = new System.Drawing.Point(69, 20);
+            this.searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.Location = new System.Drawing.Point(69, 0);
             this.searchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(60, 20);
+            this.searchLabel.Size = new System.Drawing.Size(89, 29);
             this.searchLabel.TabIndex = 0;
             this.searchLabel.Text = "Search";
             // 
@@ -468,10 +478,10 @@
             this.searchPanel.ResumeLayout(false);
             this.searchPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.editEmployeePanel.ResumeLayout(false);
-            this.editEmployeePanel.PerformLayout();
             this.deleteEmployeePanel.ResumeLayout(false);
             this.deleteEmployeePanel.PerformLayout();
+            this.editEmployeePanel.ResumeLayout(false);
+            this.editEmployeePanel.PerformLayout();
             this.createEmployeePanel.ResumeLayout(false);
             this.createEmployeePanel.PerformLayout();
             this.employeeChoicePanel.ResumeLayout(false);

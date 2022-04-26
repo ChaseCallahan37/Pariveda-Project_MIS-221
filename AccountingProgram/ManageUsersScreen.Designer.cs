@@ -73,12 +73,12 @@
             this.viewUsersTextBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.viewUsersTextBox.Enabled = false;
             this.viewUsersTextBox.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewUsersTextBox.Location = new System.Drawing.Point(86, 122);
+            this.viewUsersTextBox.Location = new System.Drawing.Point(47, 114);
             this.viewUsersTextBox.Multiline = true;
             this.viewUsersTextBox.Name = "viewUsersTextBox";
             this.viewUsersTextBox.ReadOnly = true;
             this.viewUsersTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.viewUsersTextBox.Size = new System.Drawing.Size(1501, 704);
+            this.viewUsersTextBox.Size = new System.Drawing.Size(1577, 948);
             this.viewUsersTextBox.TabIndex = 5;
             this.viewUsersTextBox.WordWrap = false;
             this.viewUsersTextBox.TextChanged += new System.EventHandler(this.viewUsersTextBox_TextChanged);
@@ -91,9 +91,9 @@
             this.panel1.Controls.Add(this.searchPanel);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1619, 0);
+            this.panel1.Location = new System.Drawing.Point(1679, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 899);
+            this.panel1.Size = new System.Drawing.Size(267, 1106);
             this.panel1.TabIndex = 6;
             // 
             // returnButton
@@ -126,7 +126,7 @@
             // createUserButton
             // 
             this.createUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.createUserButton.Location = new System.Drawing.Point(56, 696);
+            this.createUserButton.Location = new System.Drawing.Point(44, 685);
             this.createUserButton.Name = "createUserButton";
             this.createUserButton.Size = new System.Drawing.Size(105, 63);
             this.createUserButton.TabIndex = 4;
@@ -148,6 +148,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.deleteUserButton);
             this.panel2.Controls.Add(this.usernameTextBox);
@@ -156,16 +157,16 @@
             this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel2.Location = new System.Drawing.Point(18, 207);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(209, 284);
+            this.panel2.Size = new System.Drawing.Size(209, 266);
             this.panel2.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Location = new System.Drawing.Point(17, 0);
+            this.label4.Location = new System.Drawing.Point(4, 10);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 40);
+            this.label4.Size = new System.Drawing.Size(157, 40);
             this.label4.TabIndex = 8;
             this.label4.Text = "Enter Username to\r\nedit or delete\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,7 +174,7 @@
             // deleteUserButton
             // 
             this.deleteUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteUserButton.Location = new System.Drawing.Point(21, 222);
+            this.deleteUserButton.Location = new System.Drawing.Point(8, 210);
             this.deleteUserButton.Name = "deleteUserButton";
             this.deleteUserButton.Size = new System.Drawing.Size(84, 34);
             this.deleteUserButton.TabIndex = 7;
@@ -184,7 +185,7 @@
             // usernameTextBox
             // 
             this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.usernameTextBox.Location = new System.Drawing.Point(21, 102);
+            this.usernameTextBox.Location = new System.Drawing.Point(8, 102);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(187, 26);
             this.usernameTextBox.TabIndex = 6;
@@ -194,7 +195,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(21, 62);
+            this.label2.Location = new System.Drawing.Point(4, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 5;
@@ -203,7 +204,7 @@
             // editUserButton
             // 
             this.editUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editUserButton.Location = new System.Drawing.Point(21, 160);
+            this.editUserButton.Location = new System.Drawing.Point(8, 158);
             this.editUserButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.editUserButton.Name = "editUserButton";
             this.editUserButton.Size = new System.Drawing.Size(84, 34);
@@ -214,13 +215,14 @@
             // 
             // companySearchPanel
             // 
+            this.companySearchPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.companySearchPanel.Controls.Add(this.label1);
             this.companySearchPanel.Controls.Add(this.searchUserTextBox);
             this.companySearchPanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.companySearchPanel.Location = new System.Drawing.Point(18, 45);
             this.companySearchPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.companySearchPanel.Name = "companySearchPanel";
-            this.companySearchPanel.Size = new System.Drawing.Size(190, 154);
+            this.companySearchPanel.Size = new System.Drawing.Size(190, 95);
             this.companySearchPanel.TabIndex = 8;
             // 
             // label1
@@ -248,10 +250,11 @@
             // 
             this.searchLabel.AutoSize = true;
             this.searchLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.searchLabel.Location = new System.Drawing.Point(69, 20);
+            this.searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.Location = new System.Drawing.Point(69, 11);
             this.searchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(60, 20);
+            this.searchLabel.Size = new System.Drawing.Size(89, 29);
             this.searchLabel.TabIndex = 0;
             this.searchLabel.Text = "Search";
             // 
@@ -279,7 +282,7 @@
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1619, 100);
+            this.topPanel.Size = new System.Drawing.Size(1679, 108);
             this.topPanel.TabIndex = 8;
             // 
             // ManageUsersScreen
@@ -287,7 +290,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1886, 899);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.viewUsersTextBox);

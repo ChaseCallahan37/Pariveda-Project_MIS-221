@@ -28,6 +28,19 @@ namespace AccountingProgram
             FillOutForm();
         }
 
+        private bool ValidInputs()
+        {
+            if(!Utilities.CheckIsNum(yearsServiceTextBox.Text))
+            {
+                return false;
+            }
+            if(!Utilities.CheckIsNum(payRateTextBox.Text))
+            {
+                return false;
+            }
+            return true;
+        }
+
         private void FillOutForm()
         {
             nameTextBox.Text = delEmployee.GetName();
@@ -94,15 +107,23 @@ namespace AccountingProgram
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            Employees.AddEmployee(newEmployee);
-            //If there is an employee to be deleted
-            if (!CreateNewEmployee())
+            if(ValidInputs())
             {
-                Employees.DeleteEmployee(delEmployee);
+                Employees.AddEmployee(newEmployee);
+                //If there is an employee to be deleted
+                if (!CreateNewEmployee())
+                {
+                    Employees.DeleteEmployee(delEmployee);
+                }
+                FileHandler.SaveFile(Employees.ToFileDatabase(), FileHandler.GetEmployeeFileName());
+                MessageBox.Show("Employee Database Updated");
+                this.Close();
             }
-            FileHandler.SaveFile(Employees.ToFileDatabase(), FileHandler.GetEmployeeFileName());
-            MessageBox.Show("Employee Database Updated");
-            this.Close();
+            else
+            {
+                MessageBox.Show("Please enter valid inputs");
+            }
+            
 
         }
 
@@ -123,7 +144,7 @@ namespace AccountingProgram
 
         private void yearsServiceTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)

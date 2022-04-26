@@ -1,7 +1,7 @@
-4#walmart#4/19/2022 12:00:00 AM#4/21/2022 12:00:00 AM#luxury bag!10#400
-5#riva#4/20/2022 12:00:00 AM#4/30/2022 12:00:00 AM#luxury bag!2,standard bag!12#320
 9#publix#4/22/2022 12:00:00 AM#4/30/2022 12:00:00 AM#luxury bag!56#2240
 1#wagners store#4/19/2022 12:00:00 AM#7/1/2022 12:00:00 AM#luxury bag!10,deluxe bag!15#850
-4#walmart#4/19/2022 12:00:00 AM#4/21/2022 12:00:00 AM#luxury bag!10#400
 7#dollar general#4/21/2022 12:00:00 AM#6/21/2022 12:00:00 AM#deluxe bag!6#180
 11#alabama univ.#4/25/2022 12:00:00 AM#5/28/2022 12:00:00 AM#luxury bag!2000#80000
+4#walmart#4/19/2022 12:00:00 AM#4/21/2022 12:00:00 AM#luxury bag!20,standard bag!10#1000
+5#riva#4/20/2022 12:00:00 AM#4/30/2022 12:00:00 AM#luxury bag!20,standard bag!12#1040
+13#wendys shop#4/25/2022 12:00:00 AM#6/17/2022 12:00:00 AM#luxury bag!120#4800
