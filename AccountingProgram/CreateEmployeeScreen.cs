@@ -75,7 +75,8 @@ namespace AccountingProgram
             newEmployee.SetName(nameTextBox.Text);
             newEmployee.SetYearsOfService(int.Parse(yearsServiceTextBox.Text));
             newEmployee.SetDept(deptComboBox.Text);
-            if(salaryRadio.Checked)
+            newEmployee.SetRate(int.Parse(payRateTextBox.Text));
+            if (salaryRadio.Checked)
             {
                 newEmployee.SetIsSalary(true);
             }
@@ -109,7 +110,10 @@ namespace AccountingProgram
         {
             if(ValidInputs())
             {
+                //Pulls in information from the form and builds the employee
+                CreateNewEmployee();
                 Employees.AddEmployee(newEmployee);
+
                 //If there is an employee to be deleted
                 if (!CreateNewEmployee())
                 {
